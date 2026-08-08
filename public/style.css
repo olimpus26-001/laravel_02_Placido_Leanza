@@ -1,0 +1,76 @@
+/* variabili */
+:root{
+    --ylw: rgb(225, 215, 152);
+    --grnlt: #6EA171;
+    --grnbd: #4D784E;
+    --brw: #675645;
+}
+.text-yellow{
+    color: var(--ylw);
+}
+.text-greenLight{
+    color: var(--grnlt);
+}
+.text-greenBold{
+    color: var(--grnbd);
+}
+.text-brown{
+    color: var(--brw);
+}
+
+.bg-yellow{
+    background-color: var(--ylw);
+}
+.bg-greenLight{
+    background-color: var(--grnlt);
+}
+.bg-greenBold{
+    background-color: var(--grnbd);
+}
+.bg-brown{
+    background-color: var(--brw);
+}
+
+/* colore body */
+body{
+    background-color: var(--ylw);
+}
+/* stile caratteri */
+h1, h2, h3{
+    font-family: wallpoet, sans-serif;
+    color: var(--brw);
+}
+
+a, p, button{
+    font-family: cantarellh, sans-serif;
+}
+
+/* stile navbar */
+
+.logoNavbar{
+    height: 40px;
+}
+
+.logo{
+    height: 50px;
+    border: 0;
+    transition: 0.5s;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+/* stile header */
+
+.header{
+    background-image: url(/headImg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
+
+.title{
+    text-shadow: 2px 2px 5px black, -2px -2px 5px black;
+}
