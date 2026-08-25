@@ -1,49 +1,51 @@
 /* variabili */
 :root{
-    --ylw: rgb(225, 215, 152);
-    --grnlt: #6EA171;
-    --grnbd: #4D784E;
-    --brw: #675645;
+    --white: rgb(255, 255, 255);
+    --green: rgb(144, 187, 115);
+    --red: rgb(199, 1, 0);
+    --black: rgb(29, 29, 29);
 }
-.text-yellow{
-    color: var(--ylw);
+.text-white{
+    color: var(--white);
 }
-.text-greenLight{
-    color: var(--grnlt);
+.text-green{
+    color: var(--green);
 }
-.text-greenBold{
-    color: var(--grnbd);
+.text-red{
+    color: var(--red);
 }
-.text-brown{
-    color: var(--brw);
+.text-black{
+    color: var(--black);
 }
 
-.bg-yellow{
-    background-color: var(--ylw);
+.bg-white{
+    background-color: var(--white);
 }
-.bg-greenLight{
-    background-color: var(--grnlt);
+.bg-green{
+    background-color: var(--green);
 }
-.bg-greenBold{
-    background-color: var(--grnbd);
+.bg-red{
+    background-color: var(--red);
 }
-.bg-brown{
-    background-color: var(--brw);
+.bg-black{
+    background-color: var(--black);
 }
 
 /* colore body */
 body{
-    background-color: var(--ylw);
+    background-color: var(--white);
 }
 /* stile caratteri */
 h1, h2, h3{
-    font-family: wallpoet, sans-serif;
-    color: var(--brw);
+    font-family: barrio, sans-serif;
+    color: var(--black);
 }
 
 a, p, button{
-    font-family: cantarellh, sans-serif;
+    font-family: pangolin, sans-serif;
 }
+
+/* PAGINA HOME */
 
 /* stile navbar */
 
@@ -64,13 +66,96 @@ a, p, button{
 /* stile header */
 
 .header{
-    background-image: url(/headImg.jpg);
+    background-image: url(/headImg.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
 }
 
-.title{
-    text-shadow: 2px 2px 5px black, -2px -2px 5px black;
+.marrone{
+    color: #955436;
+}
+.grigio{
+    color: #AAE0FC;
+}
+.fucsia{
+    color: #DA3996;
+}
+.arancione{
+    color: #F7941F;
+}
+.rosso{
+    color: #ED1B26;
+}
+.giallo{
+    color: #FEF102;
+}
+.verde{
+    color: #1FB25A;
+}
+.blu{
+    color: #0171BB;
+}
+.nero{
+    color: black;
+}
+
+/* stile footer */
+
+.f-custom{
+    min-height: 170px;
+}
+
+.card-footer1{
+    border: 1px solid var(--black);
+    background-color: var(--red);
+    border-radius: 3% !important;
+    transition: 0.5s;
+}
+
+.card-footer1:hover{
+    scale: 1.1;
+}
+
+.ul{
+    list-style-type: none;
+}
+
+.card-footer2{
+    border: 1px solid var(--black);
+    background-color: rgb(245, 232, 1);
+    border-radius: 3% !important;
+    transition: 0.5s;
+}
+
+.card-footer2:hover{
+    scale: 1.1;
+}
+
+.ul{
+    list-style-type: none;
+}
+
+/* PAGINA CHI SIAMO */
+
+/* sezione staff */
+
+.col-custom{
+    height: 500px;
+}
+.swiper{
+    width: 75%;
+}
+
+.card{
+border: 3px solid var(--black);
+}
+
+.img{
+    border: 2px solid var(--black);
+}
+
+.img-custom{
+width: 90%;
 }

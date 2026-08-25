@@ -12,3 +12,21 @@ bullet.addEventListener('click', ()=>{
         check=false;
     }
 });
+
+
+// swipewr Js
+
+const swiper = new Swiper('.swiper', {
+  effect: 'cards',
+  grabCursor: true,
+  direction: 'horizontal',
+  loop: true,
+  loopedSlides: 6,
+  centeredSlides: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
