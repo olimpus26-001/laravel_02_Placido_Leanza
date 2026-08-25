@@ -159,3 +159,25 @@ border: 3px solid var(--black);
 .img-custom{
 width: 90%;
 }
+
+/* stile sevizi */
+
+.cardGame{
+    border: 2px solid var(--black);
+    height: 30vh;
+    width: 66%;
+    transition: 0.5s;
+}
+
+.cardGame:hover{
+    scale: 1.1;
+}
+
+.titleGame{
+    background-color: var(--green);
+    transition: 0.5s;
+}
+
+.cardGame:hover .titleGame{
+    background-color: var(--red);
+}

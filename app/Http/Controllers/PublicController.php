@@ -25,18 +25,14 @@ class PublicController extends Controller
     public function chiSiamo()
     {
         $arrayStaffs = [
-            ['name' => 'Mr Monopoly', 'role' => "l'investitore con il fiuto per gli affari", 'img' => "/mr monopoli.jpg" ],
-            ['name' => 'Gnr Patton', 'role' => "Un grande uomo e un eccellente stratega", 'img' => "/general_patton.jpg"],
-            ['name' => 'Catman', 'role' => "L'uomo che nn sbaglia una canzone", 'img' => "/catman.jpg"],
-            ['name' => 'Pokerface', 'role' => "Non potrai mai sapere che carte ha questo individuo", 'img' => "/pokerface.png"],
-            ['name' => 'Madame Dama', 'role' => "La signora che vede ogni tua mossa", 'img' => "/maDama.jpg"],
-            ['name' => 'Satoshi Shangai', 'role' => "come maneggia le bacchette lui non le maneggia nessuno", 'img' => "/satoshi.webp"]
+            ['name' => 'Mr Monopoly', 'role' => "l'investitore con il fiuto per gli affari", 'img' => "/img-staff/mr monopoli.jpg" ],
+            ['name' => 'Gnr Patton', 'role' => "Un grande uomo e un eccellente stratega", 'img' => "/img-staff/general_patton.jpg"],
+            ['name' => 'Catman', 'role' => "L'uomo che nn sbaglia una canzone", 'img' => "/img-staff/catman.jpg"],
+            ['name' => 'Pokerface', 'role' => "Non potrai mai sapere che carte ha questo individuo", 'img' => "/img-staff/pokerface.png"],
+            ['name' => 'Madame Dama', 'role' => "La signora che vede ogni tua mossa", 'img' => "/img-staff/maDama.jpg"],
+            ['name' => 'Satoshi Shangai', 'role' => "come maneggia le bacchette lui non le maneggia nessuno", 'img' => "/img-staff/satoshi.webp"]
         ];
         return view('aboutUs', ['staffs' => $arrayStaffs]);
     }
 
-    public function servizi()
-    {
-        return view('services');
-    }
 }

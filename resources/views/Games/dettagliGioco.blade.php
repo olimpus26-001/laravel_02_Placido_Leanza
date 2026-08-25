@@ -13,7 +13,7 @@
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{asset('style.css')}}">
 </head>
 
 <body>
@@ -33,29 +33,25 @@
     </nav>
     <!-- fine sezione navbar -->
 
-    <!-- sezione giochi -->
-
-    <section>
-        <div class="container-fluid h-100">
-            <div class="row justify-content-center h-25">
-                <div class="col-12">
-                    <h1 class="text-center">I MIEI GIOCHI DA TAVOLO</h1>
+    <!-- sezione dettaglio -->
+     <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 d-flex justify-content-center">
+                    <h2 class="display-1">{{$game['name']}}</h2>
                 </div>
-            </div>
-            <div class="row h-75 justify-content-center">
-                @foreach ($games as $game)
-                <div class="col-12 col-md-4 d-flex justify-content-center mb-3">
-                    <div class="cardGame">
-                        <h3 class="titleGame text-center">{{$game['name']}}</h3>
-                        <a href="{{route('services.details', ['name'=>$game['name']])}}" class="d-flex justify-content-center align-items-center"><img src="{{$game['img']}}" alt="img-game" class="img-fluid h-50 w-50"></a>
-                    </div>
+                <div class="col-12 col-md-8 h-50 w-50">
+                    <img src="{{$game['img']}}" alt="immagine del gioco" class="img-fluid">
                 </div>
-                @endforeach
+                <div class="col-12 col-md-4  d-flex justify-content-center align-items-center">
+                    <p class="description">
+                        {{$game['description']}}
+                    </p>
+                </div>
             </div>
         </div>
-    </section>
-
-    <!-- fine sezione giochi -->
+     </section>
+    <!-- fine sezione dettaglio -->
 
     <!-- sezione footer -->
     <footer class="container-fluid f-custom mt-2 bg-green">
@@ -87,7 +83,7 @@
     <!-- bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <!-- js custom -->
-    <script src="{{asset('js/services.js')}}"></script>
+    <script src="{{asset('js/details.js')}}"></script>
 </body>
 
 </html>
