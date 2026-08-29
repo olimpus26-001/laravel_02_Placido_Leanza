@@ -181,3 +181,11 @@ width: 90%;
 .cardGame:hover .titleGame{
     background-color: var(--red);
 }
+
+/* stile dettaglio */
+
+.btn-back{
+    border: 2px solid var(--black);
+    background-color: var(--red);
+    border-radius: 5%;
+}

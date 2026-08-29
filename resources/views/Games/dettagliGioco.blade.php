@@ -43,10 +43,13 @@
                 <div class="col-12 col-md-8 h-50 w-50">
                     <img src="{{$game['img']}}" alt="immagine del gioco" class="img-fluid">
                 </div>
-                <div class="col-12 col-md-4  d-flex justify-content-center align-items-center">
+                <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
                     <p class="description">
                         {{$game['description']}}
                     </p>
+                    <button class="btn-back">
+                        <a class="nav-link text-yellow" href="{{route('services')}}">torna alla pagina precedente</a>
+                    </button>
                 </div>
             </div>
         </div>

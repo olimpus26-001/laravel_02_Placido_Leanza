@@ -25,12 +25,12 @@ class PublicController extends Controller
     public function chiSiamo()
     {
         $arrayStaffs = [
-            ['name' => 'Mr Monopoly', 'role' => "l'investitore con il fiuto per gli affari", 'img' => "/img-staff/mr monopoli.jpg" ],
-            ['name' => 'Gnr Patton', 'role' => "Un grande uomo e un eccellente stratega", 'img' => "/img-staff/general_patton.jpg"],
-            ['name' => 'Catman', 'role' => "L'uomo che nn sbaglia una canzone", 'img' => "/img-staff/catman.jpg"],
-            ['name' => 'Pokerface', 'role' => "Non potrai mai sapere che carte ha questo individuo", 'img' => "/img-staff/pokerface.png"],
-            ['name' => 'Madame Dama', 'role' => "La signora che vede ogni tua mossa", 'img' => "/img-staff/maDama.jpg"],
-            ['name' => 'Satoshi Shangai', 'role' => "come maneggia le bacchette lui non le maneggia nessuno", 'img' => "/img-staff/satoshi.webp"]
+            ['id' => '1', 'name' => 'Mr Monopoly', 'role' => "l'investitore con il fiuto per gli affari", 'img' => "/img-staff/mr monopoli.jpg" ],
+            ['id' => '2', 'name' => 'Gnr Patton', 'role' => "Un grande uomo e un eccellente stratega", 'img' => "/img-staff/general_patton.jpg"],
+            ['id' => '3', 'name' => 'Catman', 'role' => "L'uomo che nn sbaglia una canzone", 'img' => "/img-staff/catman.jpg"],
+            ['id' => '4', 'name' => 'Pokerface', 'role' => "Non potrai mai sapere che carte ha questo individuo", 'img' => "/img-staff/pokerface.png"],
+            ['id' => '5', 'name' => 'Madame Dama', 'role' => "La signora che vede ogni tua mossa", 'img' => "/img-staff/maDama.jpg"],
+            ['id' => '6', 'name' => 'Satoshi Shangai', 'role' => "come maneggia le bacchette lui non le maneggia nessuno", 'img' => "/img-staff/satoshi.webp"]
         ];
         return view('aboutUs', ['staffs' => $arrayStaffs]);
     }

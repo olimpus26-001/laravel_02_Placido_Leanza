@@ -47,7 +47,7 @@
                 <div class="col-12 col-md-4 d-flex justify-content-center mb-3">
                     <div class="cardGame">
                         <h3 class="titleGame text-center">{{$game['name']}}</h3>
-                        <a href="{{route('services.details', ['name'=>$game['name']])}}" class="d-flex justify-content-center align-items-center"><img src="{{$game['img']}}" alt="img-game" class="img-fluid h-50 w-50"></a>
+                        <a href="{{route('services.details', ['id'=>$game['id']])}}" class="d-flex justify-content-center align-items-center"><img src="{{$game['img']}}" alt="img-game" class="img-fluid h-50 w-50"></a>
                     </div>
                 </div>
                 @endforeach
